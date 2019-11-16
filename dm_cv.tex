@@ -33,14 +33,14 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.90]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Greg}{Lever}
 \title{Ph.D. (Cantab.)}                               % optional, remove / comment the line if not wanted
-% \vspace*{-0.5cm}
+% \vspace*{-2cm}
 \address{32 Ashridge Way, Morden, London SM4 4EF}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+44 (0) 7814 676 385}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
@@ -72,16 +72,18 @@
 \makecvtitle
 \vspace*{-1.0cm}
 %
-I am a Software and Data professional with extensive Python, Java, SQL, NoSQL, and Machine Learning experience. 
+I am a Machine-Learning practitioner with extensive Python, Java, SQL and NoSQL experience. 
 % I am a Software and Data professional with extensive Python (Django, Flask, Pandas, NumPy, SciPy), SQL (Postgres, MySQL), NoSQL (Mongo) and Machine Learning (Tensor Flow, scikit-learn) experience. 
 %
 I gained my PhD in Computational Enzymology at the Cavendish Laboratory, University of Cambridge. 
 %
-My PhD thesis won the Springer Thesis prize and was published by Springer (now with over 2400 combined chapter downloads) and my publications in peer-reviewed journals have received over 70 citations so far. 
+My PhD thesis was nomindated as outstanding by the Universiy and later published by Springer (now with over 2,600 combined chapter downloads).
+%
+My first-name author and collaborative publications in peer-reviewed journals have received over 100 citations so far. 
 %
 I had four years of experience in Computational Biophysics labs, including work as an independent Postdoctoral Research Associate at MIT. 
 %
-I have since had three years commercial software experience and I now work in the Bioinformatics and Genome Analysis team at Genomics England. 
+I have since had four years commercial software and ML experience including work in the Bioinformatics and Genome Analysis team at Genomics England. 
 %
 I have been invited to review manuscripts at the Journal of Biological Systems and Physica Scripta. 
 %
@@ -91,16 +93,23 @@ I am passionate about continual and lifelong learning.
 \vspace*{-0.4cm}
 \section{Current Position}
 \vspace*{-0.15cm}
-\cventry{April 2017 -- present}{\small{Delivering the 100,000 Genomes Project (100KGP) and starting the NHS Genomic Medicine Service (GMS)}}{Software Engineer, Genomics England}{Farringdon, London}{}
+\cventry{Feb '19 -- now}
+{\small{ML lead for the in silico clinical trials (ISCT) team of 2 data scientists, 2 researchers and 2 engineers}}
+{Senior Machine Learning Engineer, IQVIA}{King's Cross, London}{}
 {
 \begin{itemize}%
-\item Lead engineer for the Interpretation Platform API (Python/Django/PostgreSQL/RabbitMQ/Celery), a scalable webservice acting as a central data hub 
-% for the 100KGP and the nascent GMS 
-with external clinicians relying on the genomic interpretation to provide clinical diagnosis and treatment. The service is also used significantly by internal bioinformaticians and requires excellent communication and collaboration.
-\item Main contributor to the Data Models (Avro/Java) used company wide and migrations required for reverse and forward compatibility (Python). Contributor to the Genomic Interpretation Portal (Javacsript/React).
-\item Contributing to the creation of the company's Genotype/Phenotype database and advanced query engine (Java/MongoDB/Jetty) relied on by internal researchers and external clinicians.
-\item Docker and continuous integration (Jenkins/CircleCI/Travis) and Salt for deployments  to nginx or tomcat.
-\item Sprints are managed with Jira and Confluence, we have daily scrums and fortnightly retrospectives and sprint planning sessions.
+\item Lead for the first two external-facing products to emerge from ISCT (established in March)
+managing designers and front end engineers to develop applications for clients
+from the Pharmaceutical and Clinical Trial domains.
+\item Contributing to client engagements via ISCT and IQVIA's data partnership with Genomics England.
+\item Mentoring an undergraduate intern working on integrating 
+probabilistic reasoning and statistical analysis into 
+existing ISCT models with TensorFlow Probability.
+\item Mentored two PhD interns working on Rare Disease detection on a paper accepted at AAAI-20.
+\item Designing and building models (TensorFlow/scikit-learn)
+to meet a variety of requirements within ISCT.
+\item Collaborating with the reasearch arm of the company to bring 
+algorithms from the lab into products.
 \end{itemize}}
 \vspace*{-0.4cm}
 \section{Computation and Modelling Skills}
@@ -127,45 +136,55 @@ Git (I encourage rebasing and gladly help others with merge conflicts), NoSQL (M
 %\cvitem{description}{Short thesis abstract}
 \vspace*{-0.5cm}
 \section{Experience}
-%\subsection{Data Science}
-%\cventry{February 2015 -- March 2015}{\small{A startup focussed on building like-minded communities over social media}}{Data Scientist, Quiet Riots}{Impact Hub Westminster}{}{
-%\begin{itemize}
-%\item Developing and implementing strategies for growth hacking and user retention
-%\item Using graph databasing software Neo4J and Cypher Query
-%\end{itemize}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace*{-0.15cm}
-\cventry{Dec 2015 -- April 2017}{\small{A fintech startup at the intersection of Data Science and Wealth Management (established March 2015)}}{Data Scientist (Data Science Developer), Arkera}{Westminster, London}{}
+\cventry{Apr '17 -- Feb '19}{\small{Delivering the 100,000 Genomes Project (100KGP) and starting the NHS Genomic Medicine Service (GMS)}}{Software Engineer (Bioinformatics and Genome Analysis), Genomics England}{Farringdon, London}{}
 {
 \begin{itemize}%
+\item Lead engineer for the Interpretation Platform API (Python/Django/PostgreSQL/RabbitMQ/Celery), a scalable webservice acting as a central data hub 
+% for the 100KGP and the nascent GMS 
+with external clinicians relying on the genomic interpretations to provide clinical diagnosis and treatment. The service is also used significantly by internal bioinformaticians and requires excellent communication and collaboration.
+\item Main contributor to the Data Models (Avro/Java) used company wide and migrations required for reverse and forward compatibility (Python). Contributor to the Genomic Interpretation Portal (Javacsript/React).
+\item Contributing to the creation of the company's Genotype/Phenotype database and advanced query engine (Java/MongoDB/Jetty) relied on by internal researchers and external clinicians.
+\item CI/CD: Docker and continuous integration (Jenkins/CircleCI/Travis) and Salt for deployments  to nginx or tomcat.
+\item Sprints are managed with Jira and Confluence, we have daily scrums and fortnightly retrospectives and sprint planning sessions.
+\end{itemize}
+}
+% \vspace*{-0.15cm}
+\cventry{Dec '15 -- Apr '17}{\small{A fintech startup at the intersection of Data Science and Wealth Management (established March 2015)}}{Data Scientist (Data Science Developer), Arkera}{Westminster, London}{}
+{
+\begin{itemize}
 \item I was Arkera's first Data hire and was instrumental in building the Data team, adding an additional three members.
-\item Python (Flask/SQLAlchemy) and SQL (complex queries for PostgreSQL, migrated from MySQL) for our backend and web scraping, along with the design of our database schema and dimensional data modelling.
-\item I am a strong advocate of Test-Driven Development and implemented the company's unit and functional testing framework. 
-\item I played a key role in moving the Data team to an agile development process (stand-ups, sprint planning, code reviews, retrospectives, continuous integration) initially through Trello and then to JIRA.
-%\item I worked on the design, prototyping, implementation and maintenance of the proprietary Machine Learning (Scikit-Learn/NumPy/SciPy) and Natural Language Processing algorithms, along with ETL processes and the data models.
-%\item I developed the first Data roadmap for the company and am continually developing ideas for improving our workflows
-\item Organised the code base into an ecosystem of microservices providing HTTP endpoints for our iOS and web applications.
-%\item Amazon SQS event messaging and exposure to iOS for the app.
-%\item Engaging in constructive communications with the Business and Content teams, along with third party API providers. 
-%\item I perform integrations with third-party API providers and create and maintain in-house tools for our Content Team (javascript).
-\end{itemize}}
+% \item Python (Flask/SQLAlchemy) and SQL (complex queries for PostgreSQL, migrated from MySQL) for our backend and web scraping, along with the design of our database schema and dimensional data modelling.
+% \item I am a strong advocate of Test-Driven Development and implemented the company's unit and functional testing framework. 
+% \item I played a key role in moving the Data team to an agile development process (stand-ups, sprint planning, code reviews, retrospectives, continuous integration) initially through Trello and then to JIRA.
+% %\item I worked on the design, prototyping, implementation and maintenance of the proprietary Machine Learning (Scikit-Learn/NumPy/SciPy) and Natural Language Processing algorithms, along with ETL processes and the data models.
+% %\item I developed the first Data roadmap for the company and am continually developing ideas for improving our workflows
+% \item Organised the code base into an ecosystem of microservices providing HTTP endpoints for our iOS and web applications.
+% %\item Amazon SQS event messaging and exposure to iOS for the app.
+% %\item Engaging in constructive communications with the Business and Content teams, along with third party API providers. 
+% %\item I perform integrations with third-party API providers and create and maintain in-house tools for our Content Team (javascript).
+\end{itemize}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\vspace*{-0.15cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cventry{April 2015 -- Dec 2015}{\small{An e-commerce startup with an app and website designed to enable women to find their perfect shoes}}{Senior Data Scientist, Stylect}{WeWork, Liverpool St}{}
+\cventry{Apr '15 -- Dec '15}{\small{An e-commerce startup with an app and website designed to enable women to find their perfect shoes}}{Senior Data Scientist, Stylect}{Liverpool St, London}{}
 {
 \begin{itemize}%
-\item I headed the Data Science efforts at Stylect, utilising my skills in Python, SQL and Machine Learning.
+% \item I headed the Data Science efforts at Stylect, utilising my skills in Python, SQL and Machine Learning.
 \item I led the design, engineering and deployment of production-worthy Machine Learning architectures for Recommender Systems to improve the user experience and ultimately increase sales.
-\item Involved extensive Python development (web scraping, pytest) with Pandas (including NumPy, SciPy and Matplotlib) and Scikit-Learn along with maintaining and adding new  endpoints serving web, iOS and Android applications.
-\item Required SQL to use services from the Google Cloud Platform including Big Query and the App Engine.
-\item Utilised Natural Language Processing (Natural Language Toolkit) to perform Feature Engineering for Machine Learning (Scikit-Learn) approaches for classifying retail products.
-\item Devised, implemented and interpreted A/B tests to assess the accuracy of the predictive models.
+% \item Involved extensive Python development (web scraping, pytest) with Pandas (including NumPy, SciPy and Matplotlib) and Scikit-Learn along with maintaining and adding new  endpoints serving web, iOS and Android applications.
+% \item Required SQL to use services from the Google Cloud Platform including Big Query and the App Engine.
+% \item Utilised Natural Language Processing (Natural Language Toolkit) to perform Feature Engineering for Machine Learning (Scikit-Learn) approaches for classifying retail products.
+% \item Devised, implemented and interpreted A/B tests to assess the accuracy of the predictive models.
 \end{itemize}
 }
 \vspace*{-0.15cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cventry{February 2015 -- April 2015}{The ASI Fellowship enables academic scientists to become data scientists and engineers}{Data Science Fellow, The ASI}{London}{}{
+
+\vspace*{-0.2cm}
+\section{Education}
+\vspace*{-0.15cm}
+\cventry{February 2015 -- April 2015}{The ASI Fellowship enables academic scientists to become data scientists and engineers}{Postdoctoral Data Science Fellow, The ASI}{London}{}{
 \begin{itemize}
 \item Built a prototype recommender system for an e-commerce startup (Stylect) to improve their user experience and increase sales.
 \item  Developed strategies for growth hacking and user retention for a community-building startup (Quiet Riots).
@@ -183,9 +202,6 @@ Git (I encourage rebasing and gladly help others with merge conflicts), NoSQL (M
 % \item The work is currently being prepared to submit for publication in the \emph{American Chemical Society} journal \emph{Catalysis}.
 \end{itemize}
 }  % arguments 3 to 6 can be left empty
-\vspace*{-0.2cm}
-\section{Education}
-\vspace*{-0.15cm}
 \cventry{September 2010 -- March 2014}{Computational Enzymology, Cavendish Laboratory}{PhD, University of Cambridge}{Cambridge}{}{
 \begin{itemize}
 \item Long-term independent research and analysis from self-driven projects that delivered scientific results and expanded my field.
@@ -274,10 +290,10 @@ References available on request
 %-----       letter       ---------------------------------------------------------
 % recipient data
 \recipient{~}{~}
-\date{\vspace*{-0cm}~}
+\date{\vspace*{-0.5cm}~}
 \opening{\vspace*{-3cm}~}
 \closing{Yours sincerely, \\ \hspace*{-0.3cm}
-\includegraphics[scale=0.5]{GL-signature-blue.png} 
+\includegraphics[scale=0.25]{GL-signature-blue.png} 
 \vspace*{-1cm}
 }
 %\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
@@ -290,8 +306,8 @@ I would very much like to be considered for the role of Science Researcher at De
 
 %
 I have always had a broad range of scientific interests. 
-This began from benefiting from some inspirational 
-Physics teachers during my school years. Of note is an 
+This began when benefiting from some inspirational 
+Physics teachers during my school years. I fondly remember an 
 Electronics A-level class back in 2004 where I 
 built an analog perceptron circuit and trained 
 simple logic gates. It wasn't anything groundbreaking 
@@ -306,72 +322,165 @@ Theoretical Physics at UCL.
 
 The scientific publications I have been involved with further
 demonstrate these wide interests. 
-In the third year of my undergraduate degree I led of team of my colleagues to discover an Exoplanet, only to be scooped by a team working on the other side of the world[1]. I would continue this collaboration while working on my PhD in another subject[2]. The summer following my third year of undergrad I worked in the London Centre for Nanotechnology as a research intern. After studying the fundamentals of Density-Functional Theory and Quantum Mechanics in my degree I applied them in areas of Materials Science such as silicon surfaces at the atomic scale.[3][4]
+In the third year of my undergraduate degree I led a 
+team of my colleagues to discover an 
+Exoplanet\cite{habitable}. 
+I would continue this collaboration\cite{exofit_mnras} 
+while working on my PhD in another subject. 
+The summer following my third year of undergrad 
+I worked in the London Centre for Nanotechnology as a 
+research intern. After studying the fundamentals 
+of Density-Functional Theory and Quantum Mechanics in my 
+degree I applied these in 
+Materials Science, specifically Silicon surfaces at the 
+atomic scale \cite{stm_aps} with the overall aim
+of furthering our understanding how we can form 
+individual atomistic nano-wires, providing an alternative
+to Silicon chips as Moore's Law
+reaches its physical limits.
 %
-For my PhD I shifted my focus more towards biology. Following graduate training in the fundamentals of Computational Biology 
-My thesis was nominated as an outstanding PhD thesis by the University of Cambridge and subsequently published by Springer
-%
-PhD computational biology 
-%
-\textbf{Genomics England molecular genetics}
-where my work in the Bioinformatics team 
-on the 100,000 Genomes Project was 
-acknowledged in a British Medical Journal publication.
-\cite{gel_bmj}
-%
-%
-Most recently the work I've been doing within a clinical 
-and healthcare setting has been accepted for the next 
-AAAI conference 
-(this year with an acceptance rate of 20.6\%).\cite{conan}
-%
+I continued in this direction for my Masters 
+dissertation which formed the basis of a 
+publication collaborating with
+experementalists\cite{prb_silicon}.
 %
 
-
-
-I am a Software and Data professional with extensive Python, SQL and applied Machine Learning experience (5+ years academic/scientific and 2 years commercial). Following my first-class honours MSci in Theoretical Physics from UCL I gained my PhD in Computational Enzymology at the Cavendish Laboratory, University of Cambridge, where my thesis was nominated as outstanding by the University and later published by Springer [3], now with over 1600 combined chapter downloads. My first-name author publications concerning Computational Enzymology [4] and Protein Modelling [5] including my previous collaborations on Computational Predictions in Silicon Materials Physics [6] and Computational Predictions of Extrasolar Planets [7] in peer-reviewed journals have received 50 citations so far.
-
+%
+For my PhD I shifted my focus more towards biology. 
+%
+Following graduate training in the foundations of 
+Computational Biology I published first-name author
+works considering some of the fundamental challenges
+in applying a combination of 
+quantum and classical mechanics-based techniques
+to proteins\cite{jpcm} and then applied these techniques 
+to accurately describe the reaction of an enzyme,
+the class of proteins fundamental for life\cite{jpcl}.
+%
+My thesis was nominated as an outstanding
+PhD thesis by the University of Cambridge
+and subsequently published by 
+Springer\cite{springer_thesis}.
+%
 Following my PhD I accepted a position as a 
 Postdoctoral Research Associate at MIT\cite{mit}. 
-\textbf{discuss slow pace of academia and wanting greater 
-impact}
-
-before transitioning into commercial roles [9] within technology startups where I have been building Machine Learning products. I have also spoken at commercial conferences such as Big Data Week London where I hosted a workshop on How to Become an Effective Data Scientist [10].
-
-
-
-As mentioned above, before transitioning into Stylect via a Data Science \& Business Analytics Fellowship at The ASI where I had the opportunity to learn neo4j and apply the techniques for a startup. Before the ASI I was a Postdoctoral Research Associate at MIT. Part of my role as a post doc was providing documentation and tutorials to more junior members of the research group.
-Part of this included the integration and loading of public biological databases 
-into the workflow of the group from sources such as the National Center for Biotechnology Information for Next Generation Sequence data and Protein Data Bank. In addition I generated educational material for delivering lectures to students taking the graduate computational chemistry course provided by the Chemical Engineering Department.  
 %
-I am excited by the prospect of being a part of the talented team of smart technologists and expert biomedical scientists at DeepMind
-working on unique and cutting-edge tech that could potentially change millions of lives.
+Aside from my research investigating 
+how mutations in enzyme sequences affect catalysis,
+my post doc involved mentoring
+the junior members of the research group along
+with the integration and loading of 
+large public biological databases 
+into the workflow of the group from sources 
+such as the National Center for Biotechnology 
+Information for Next Generation Sequence data and 
+Protein Data Bank.
 %
-I strongly feel that I would have a great sense of drive and fulfilment knowing I was 
-part of the team
-harnessing AI 
-to enhance and accelerate scientific discovery, 
-to create new insights and usable knowledge, 
-and to potentially benefit society at large.
+On the teaching side I developed material for 
+delivering graduate computational chemistry 
+lectures.
+%
 
+%
+Frustrated by the slow pace of academia
+and lack of wider impact outside my 
+small research community, combined with the desire to
+work in a more product-led environment, I decided to apply 
+for the The Faculty fellowship programme.
+%
+% This initiative helps academics become 
+% highly-skilled data scientists and 
+% transition successfully into careers 
+% and industries that are ready to benefit 
+% from artificial intelligence. 
+%
+% After two weeks of intensive lectures and 
+% workshops at Faculty, where I learned how to apply 
+% my technical knowledge towards the application of 
+% data science, I was paired with a company 
+% for a six-week data science project who subsequently 
+% hired me. 
+%
+The fellowship included two weeks of 
+intensive lectures and workshops at Faculty, 
+where I learned how to apply 
+my technical knowledge towards the application of 
+data science.
+% 
+I was then paired with a company 
+for a six-week data science project and they subsequently 
+hired me.
+%
+Working within this company and 
+later another technology startup in London
+I was building consumer-facing Machine-Learning
+products. 
+%
+I also spoke at Big Data Week London, co-hosting 
+a panel on How to Become an Effective Data Scientist\cite{BDW}.
 
+%
+An opportunity then arose to join the team at 
+Genomics England in their efforts to sequence
+and analyse 100,000 genomes from NHS patients.
+%
+This was a chance for me to further develop my
+bioinformatics and molecular genetics skills developed
+during my PhD and postdoc.
+%
+My work in the Bioinformatics team 
+on the 100,000 Genomes Project was 
+acknowledged in a British Medical Journal publication\cite{gel_bmj}.
+%
+Following the completion of the 100K project
+I joined IQVIA who has a unique data partnership
+with Genomics England and where I am the ML 
+lead for the in silico clinical trials project.
+%
+I also collaborate with IQVIA's ML researchers
+led by Danica Xiao, a renowned researcher in
+the AI for Healthcare field.
+%
+Most recently the work I've been doing 
+within a clinical and healthcare setting has 
+been accepted for the next AAAI conference\cite{conan} 
+(this year with an acceptance rate 
+of 20.6\%).
+%
+
+%
 I feel the state of Machine Learning and AI at the 
 moment is akin to the release of the IBM PC or the Apple II.
 %
-Suddenly with things like the first real spreadsheet 
-software, for example, people were able to deal with 
+An example is the emergence of the first real spreadsheet 
+software, enabling people to deal with 
 financial data, customer data and so forth in a much 
-more intuitive way than would have been possible, 
-albeit rather cumbersome, on a mainframe. 
+more intuitive way than would have been possible on a mainframe. 
 %
-Now being able to use statistical-learning techniques or machine-learning approaches or to train computational neural nets makes a lot of the problems that we've had for decades more tractable and I think DeepMind is one of very few companies that has some really globally and 
+Being able to use statistical-learning techniques, 
+machine-learning approaches or to train 
+computational neural nets 
+makes a lot of decades-old problems much 
+more tractable
+%
+A part of the Science Researcher role 
+I would relish is the unique opportunity 
+to participate in the Domain Expert Embedding Programme
+and have the chance to learn from world-leading researchers from 
+DeepMind and beyond.
+%
+I firmly believe DeepMind 
+is one of very 
+few companies that has some really globally and 
 intellectually significant problems in its sights 
 and that's why I really want to be a part of 
-your journey.
-					
-I look forward to hearing from you. 
+your journey and apply my scientific skills to furthering
+DeepMind's vision.
+% 
 
 ~\\
+I look forward to hearing from you. 
+
 ~\\
 
 \makeletterclosing
@@ -381,7 +490,7 @@ I look forward to hearing from you.
 %\bibliographystyle{plain}
 \bibliographystyle{unsrt}
 %\bibliographystyle{unsrtnat}
-%\renewcommand{\refname}{Articles}
+\renewcommand{\refname}{References}
 % \renewcommand{\refname}{Links}
 \bibliography{publications}                        % 'publications' is the name of a BibTeX file
 
