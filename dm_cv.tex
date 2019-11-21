@@ -1,0 +1,517 @@
+% !TeX program = xelatex
+% the above line is TeXShop specific -- it will set
+% the engine for you when you open the document
+
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{fontawesome}
+\usepackage{natbib}
+\moderncvicons{awesome}
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+% \usepackage[
+% backend=biber,
+% style=alphabetic,
+% sorting=ynt
+% ]{biblatex}
+ 
+% \addbibresource{publications.bib}
+
+ \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.90]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Greg}{Lever}
+\title{Ph.D. (Cantab.)}                               % optional, remove / comment the line if not wanted
+% \vspace*{-2cm}
+\address{32 Ashridge Way, Morden, London SM4 4EF}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44 (0) 7814 676 385}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{greglever@cantab.net}                               % optional, remove / comment the line if not wanted
+\homepage{greglever.github.io}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{levergreg}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{greglever}                              % optional, remove / comment the line if not wanted
+%\extrainfo{References: Prof. Mike Payne (mcp1@cam.ac.uk), Dr. Danny Cole (daniel.cole@yale.edu)}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-1.0cm}
+%
+I am a Machine-Learning practitioner with extensive Python, Java, SQL and NoSQL experience. 
+% I am a Software and Data professional with extensive Python (Django, Flask, Pandas, NumPy, SciPy), SQL (Postgres, MySQL), NoSQL (Mongo) and Machine Learning (Tensor Flow, scikit-learn) experience. 
+%
+I gained my PhD in Computational Enzymology at the Cavendish Laboratory, University of Cambridge. 
+%
+My PhD thesis was nomindated as outstanding by the Universiy and later published by Springer (now with over 2,600 combined chapter downloads).
+%
+My first-name author and collaborative publications in peer-reviewed journals have received over 100 citations so far. 
+%
+I had four years of experience in Computational Biophysics labs, including work as an independent Postdoctoral Research Associate at MIT. 
+%
+I have since had four years commercial software and ML experience including work in the Bioinformatics and Genome Analysis team at Genomics England. 
+%
+I have been invited to review manuscripts at the Journal of Biological Systems and Physica Scripta. 
+%
+I am passionate about continual and lifelong learning.
+
+
+\vspace*{-0.4cm}
+\section{Current Position}
+\vspace*{-0.15cm}
+\cventry{Feb '19 -- now}
+{\small{ML lead for the in silico clinical trials (ISCT) team of 2 data scientists, 2 researchers and 2 engineers}}
+{Senior Machine Learning Engineer, IQVIA}{King's Cross, London}{}
+{
+\begin{itemize}%
+\item Lead for the first two external-facing products to emerge from ISCT (established in March)
+managing designers and front end engineers to develop applications for clients
+from the Pharmaceutical and Clinical Trial domains.
+\item Contributing to client engagements via ISCT and IQVIA's data partnership with Genomics England.
+\item Mentoring an undergraduate intern working on integrating 
+probabilistic reasoning and statistical analysis into 
+existing ISCT models with TensorFlow Probability.
+\item Mentored two PhD interns working on Rare Disease detection on a paper accepted at AAAI-20.
+\item Designing and building models (TensorFlow/scikit-learn)
+to meet a variety of requirements within ISCT.
+\item Collaborating with the reasearch arm of the company to bring 
+algorithms from the lab into products.
+\end{itemize}}
+\vspace*{-0.4cm}
+\section{Computation and Modelling Skills}
+%\vspace*{-0.15cm}
+\vspace*{-0.3cm}
+\cvitem{Languages}{%
+\emph{Strong in} Python (Django/Celery/Scikit-Learn/Pandas/NumPy/SciPy/SpaCy/Flask/SQLAlchemy/Cython), 
+SQL (PostgreSQL/MySQL/BigQuery), Linux (BASH scripting along with awk, sed and grep), AWS,   
+Git (I encourage rebasing and gladly help others with merge conflicts), NoSQL (MongoDB) and \LaTeX~typesetting. 
+%
+\emph{Confident with} Java (Jetty/Spring Boot), R, Javascript (React), Neo4j/Cypher Query, CSS/HTML, Mathematica and the Google App Engine.
+%
+\emph{Experience of} Perl, Fortran, C++ and Matlab. 
+%Expanding my knowledge by currently generating expertise in Deep Learning using Python (pylearn2) and Java (DL4J).
+\emph{Learning} Cirq for quantum computing.
+}
+\vspace*{-0.1cm}
+\cvitem{Operating Systems}{Strong capabilities in UNIX/Linux and High Performance Computing clusters, Mac OS X, and Windows-based environments.}
+\vspace*{-0.1cm}
+\cvitem{Certifications}{Medicinal Chemistry (EdX), R Programming (Coursera) and Data Scientist's Toolbox (Coursera).}
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+\vspace*{-0.5cm}
+\section{Experience}
+\cventry{Apr '17 -- Feb '19}{\small{Delivering the 100,000 Genomes Project (100KGP) and starting the NHS Genomic Medicine Service (GMS)}}{Software Engineer (Bioinformatics and Genome Analysis), Genomics England}{Farringdon, London}{}
+{
+\begin{itemize}%
+\item Lead engineer for the Interpretation Platform API (Python/Django/PostgreSQL/RabbitMQ/Celery), a scalable webservice acting as a central data hub 
+% for the 100KGP and the nascent GMS 
+with external clinicians relying on the genomic interpretations to provide clinical diagnosis and treatment. The service is also used significantly by internal bioinformaticians and requires excellent communication and collaboration.
+\item Main contributor to the Data Models (Avro/Java) used company wide and migrations required for reverse and forward compatibility (Python). Contributor to the Genomic Interpretation Portal (Javacsript/React).
+\item Contributing to the creation of the company's Genotype/Phenotype database and advanced query engine (Java/MongoDB/Jetty) relied on by internal researchers and external clinicians.
+\item CI/CD: Docker and continuous integration (Jenkins/CircleCI/Travis) and Salt for deployments  to nginx or tomcat.
+\item Sprints are managed with Jira and Confluence, we have daily scrums and fortnightly retrospectives and sprint planning sessions.
+\end{itemize}
+}
+% \vspace*{-0.15cm}
+\cventry{Dec '15 -- Apr '17}{\small{A fintech startup at the intersection of Data Science and Wealth Management (established March 2015)}}{Data Scientist (Data Science Developer), Arkera}{Westminster, London}{}
+{
+\begin{itemize}
+\item I was Arkera's first Data hire and was instrumental in building the Data team, adding an additional three members.
+% \item Python (Flask/SQLAlchemy) and SQL (complex queries for PostgreSQL, migrated from MySQL) for our backend and web scraping, along with the design of our database schema and dimensional data modelling.
+% \item I am a strong advocate of Test-Driven Development and implemented the company's unit and functional testing framework. 
+% \item I played a key role in moving the Data team to an agile development process (stand-ups, sprint planning, code reviews, retrospectives, continuous integration) initially through Trello and then to JIRA.
+% %\item I worked on the design, prototyping, implementation and maintenance of the proprietary Machine Learning (Scikit-Learn/NumPy/SciPy) and Natural Language Processing algorithms, along with ETL processes and the data models.
+% %\item I developed the first Data roadmap for the company and am continually developing ideas for improving our workflows
+% \item Organised the code base into an ecosystem of microservices providing HTTP endpoints for our iOS and web applications.
+% %\item Amazon SQS event messaging and exposure to iOS for the app.
+% %\item Engaging in constructive communications with the Business and Content teams, along with third party API providers. 
+% %\item I perform integrations with third-party API providers and create and maintain in-house tools for our Content Team (javascript).
+\end{itemize}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace*{-0.15cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cventry{Apr '15 -- Dec '15}{\small{An e-commerce startup with an app and website designed to enable women to find their perfect shoes}}{Senior Data Scientist, Stylect}{Liverpool St, London}{}
+{
+\begin{itemize}%
+% \item I headed the Data Science efforts at Stylect, utilising my skills in Python, SQL and Machine Learning.
+\item I led the design, engineering and deployment of production-worthy Machine Learning architectures for Recommender Systems to improve the user experience and ultimately increase sales.
+% \item Involved extensive Python development (web scraping, pytest) with Pandas (including NumPy, SciPy and Matplotlib) and Scikit-Learn along with maintaining and adding new  endpoints serving web, iOS and Android applications.
+% \item Required SQL to use services from the Google Cloud Platform including Big Query and the App Engine.
+% \item Utilised Natural Language Processing (Natural Language Toolkit) to perform Feature Engineering for Machine Learning (Scikit-Learn) approaches for classifying retail products.
+% \item Devised, implemented and interpreted A/B tests to assess the accuracy of the predictive models.
+\end{itemize}
+}
+\vspace*{-0.15cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace*{-0.2cm}
+\section{Education}
+\vspace*{-0.15cm}
+\cventry{February 2015 -- April 2015}{The ASI Fellowship enables academic scientists to become data scientists and engineers}{Postdoctoral Data Science Fellow, The ASI}{London}{}{
+\begin{itemize}
+\item Built a prototype recommender system for an e-commerce startup (Stylect) to improve their user experience and increase sales.
+\item  Developed strategies for growth hacking and user retention for a community-building startup (Quiet Riots).
+\item Expert-led training and practical workshops in Hadoop, Spark and MapReduce as well as Statistics and Business-specific concepts.
+\end{itemize}
+}  % arguments 3 to 6 can be left empty
+\vspace*{-0.15cm}
+\cventry{March 2014 -- February 2015}{MIT Department of Chemical Engineering and Cavendish Laboratory}{Postdoctoral Associate, MIT and University of Cambridge}{Cambridge, MA (USA)}{}{
+\begin{itemize}
+\item Further developed and galvanised existing skills in Python gained from my PhD. 
+\item Built upon my knowledge of R from my MSci, learning new concepts and tools for analysing results of simulations. 
+\item Mentoring of graduate students, taught undergraduates to use linux and High Performance Computing for the very first time.
+\item Independent exploratory analysis using Python/Pandas (including NumPy, SciPy and Matplotlib) of an existing body of data.
+\item Collaborated closely with teams based in the UK (Cambridge, Bristol and Southampton) and the USA (Yale).
+% \item The work is currently being prepared to submit for publication in the \emph{American Chemical Society} journal \emph{Catalysis}.
+\end{itemize}
+}  % arguments 3 to 6 can be left empty
+\cventry{September 2010 -- March 2014}{Computational Enzymology, Cavendish Laboratory}{PhD, University of Cambridge}{Cambridge}{}{
+\begin{itemize}
+\item Long-term independent research and analysis from self-driven projects that delivered scientific results and expanded my field.
+\item Applied mathematical theories to complex real-world problems and generated new methodologies to improve existing approaches.
+\item Extensive Python (Pandas, NumPy, SciPy) development for data analysis of computational chemistry simulations.
+\item Immersed in a High Performance Computing Environment utilising linux, BASH, perl, awk, sed and grep.
+% \item Winner of thesis prize ``Recognising Outstanding Research'', \emph{Springer} subsequently bought my intellectual property from me.
+% \item Published first-name author papers in the \emph{Journal of Chemical Physics} and the \emph{Journal of Physics: Condensed Matter}.
+\end{itemize}
+}
+\cventry{September 2006 -- July 2010}{Theoretical Physics}{MSci (First Class Honours), University College London}{London}{}{
+\begin{itemize}
+\item Through summer projects in 2009 and '10, extended self-taught Linux and Python programming knowledge through real research.
+\item Contributed to Bayesian Inference software using R and Java and developed extensions in C++.
+% \item Resulted in a publication in \emph{Monthly Notices of the Royal Astronomical Society}, summer work published in \emph{Physical Review B}.
+\item Course Highlights: Java,C++, Mathematica, Advanced Quantum Theory, Stochastic Processes, Group Project.
+\end{itemize}
+}
+\vspace*{-0.2cm}
+\section{Extracurricular Activities}
+\vspace*{-0.15cm}
+\cventry{July 2014 to Oct. 2014}{\small{MIT Department of Chemical Engineering}}{Supervisor for MIT Undergraduate Research Opportunities Program (UROP)}{Cambridge, MA (USA)}{}{
+\small{Provided modelling \& simulation training for a candidate who had never previously run any simulations or used the linux terminal.}}
+
+\cventry{October 2012 to Oct. 2013}{\small{Cavendish Laboratory, University of Cambridge}}{Co-supervised Cambridge MPhil Student in Scientific Computing}{Cambridge}{}{
+\small{Provided electronic structure expertise and biological expertise, to complement the MPhil candidate's additional co-supervisor.}}
+%who provided physics and analytical mathematical modelling expertise. Helped the candidate to prepare for PhD applications.}}
+
+\cventry{September 2011/'12/'13}{\small{Cavendish Laboratory, University of Cambridge}}{Physics At Work - Outreach Event for the Cavendish Laboratory}{Cambridge}{}{
+\small{Organised exhibitors for and participated in a three day outreach exhibition in Cambridge aimed at inspiring 14-17 year olds to become the next generation of scientists, engineers and technology specialists by showcasing the many and varied ways computational physics is used in the real world.}}
+
+\cventry{April 2013}{\small{Procter \& Gamble (P\&G) Brussels Innovation Centre}}{Procter \& Gamble R\&D European PhD Seminar 2013}{Brussels}{}{
+% \begin{itemize}
+\small{ Applied technical knowledge to solve real problems found in the typical day of a Scientist or Engineer in R\&D at P\&G.}
+%\item Gained insight into daily business challenges, including how to make difficult and tough decisions, set priorities and communicate.
+%\item Over the week, led a team of PhD students, practising the skills required to motivate people, via exercises and case studies.
+%\end{itemize}
+}
+
+\cventry{October 2011 -- December 2011}{\small{Finding real-world applications for a synthetic reversible molecular lego system}}{i-Teams: Commercialising Creativity}{Cambridge}{}{
+%\begin{itemize}
+%\item 
+\small{Led a team of 6 PhD students and 1 MBA student asked to investigate an invention that came out of a Cambridge laboratory.}
+%\item Furthered our ideas for real-world applications by contacting external industry scientists and harnessing their expertise.
+%\item Understood the practical processes needed to turn a new technology into a commercially-viable product.
+%\item Learned how to work with sensitive intellectual property and to bring it to the attention of an existing market.
+%\end{itemize}
+}
+
+\cventry{March 2011}{\small{Building a Business Case for more \emph{in silico} modelling in the Pharmaceutical Industry}}{Business Challenge hosted by Cambridge University Technology and Enterprise Club}{Cambridge}{}{
+%\begin{itemize}
+% \item Led a team of three fellow PhD students  working in close collaboration with the Director of Clinical Pharmacology at Medimmune.
+%\item Ascertained the best approach for computer modelling within the pharmaceutical industry based on current technologies
+% \item Had to think about real-world research within a business context 
+% \item Gained a firm appreciation for what is expected from data-driven scientists within commercial organisations
+%\end{itemize}
+}
+
+\cventry{June 2010 -- September 2010}{\small{Successfully applied for funding from the Engineering and Physical Sciences Research Council}}{Researcher, London Centre for Nanotechnology}{London}{}{}
+
+\cventry{June 2009 -- September 2009}{\small{Successful in funding competition for all department undergraduates}}{Researcher, University College London}{London}{}{}
+\begin{center}
+References available on request
+\end{center}
+%%%%%%%%\begin{cvcolumns}
+%%%%%%%%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%%%%%%%%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%%%%%%%%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%%%%%%%%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): 
+
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{~}{~}
+\date{\vspace*{-0.5cm}~}
+\opening{\vspace*{-3cm}~}
+\closing{Yours sincerely, \\ \hspace*{-0.3cm}
+\includegraphics[scale=0.25]{GL-signature-blue.png} 
+\vspace*{-1cm}
+}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+%
+To whom it may concern,
+%
+
+I would very much like to be considered for the role of Science Researcher at DeepMind.
+
+%
+I have always had a broad range of scientific interests. 
+This began when benefiting from some inspirational 
+Physics teachers during my school years. I fondly remember an 
+Electronics A-level class back in 2004 where I 
+built an analog perceptron circuit and trained 
+simple logic gates. It wasn't anything groundbreaking 
+but to see that you could train a circuit to produce 
+an output you wanted, without having to hard-code 
+any rules, just blew my mind. 
+%
+At this time I was fascinated by quantum computing 
+and quantum mechanics, motivating me to study 
+Theoretical Physics at UCL.
+%
+
+The scientific publications I have been involved with further
+demonstrate these wide interests. 
+In the third year of my undergraduate degree I led a 
+team of my colleagues to discover an 
+Exoplanet\cite{habitable}. 
+I would continue this collaboration\cite{exofit_mnras} 
+while working on my PhD in another subject. 
+The summer following my third year of undergrad 
+I worked in the London Centre for Nanotechnology as a 
+research intern. After studying the fundamentals 
+of Density-Functional Theory and Quantum Mechanics in my 
+degree I applied these in 
+Materials Science, specifically Silicon surfaces at the 
+atomic scale \cite{stm_aps} with the overall aim
+of furthering our understanding how we can form 
+individual atomistic nano-wires, providing an alternative
+to Silicon chips as Moore's Law
+reaches its physical limits.
+%
+I continued in this direction for my Masters 
+dissertation which formed the basis of a 
+publication collaborating with
+experementalists\cite{prb_silicon}.
+%
+
+%
+For my PhD I shifted my focus more towards biology. 
+%
+Following graduate training in the foundations of 
+Computational Biology I published first-name author
+works considering some of the fundamental challenges
+in applying a combination of 
+quantum and classical mechanics-based techniques
+to proteins\cite{jpcm} and then applied these techniques 
+to accurately describe the reaction of an enzyme,
+the class of proteins fundamental for life\cite{jpcl}.
+%
+My thesis was nominated as an outstanding
+PhD thesis by the University of Cambridge
+and subsequently published by 
+Springer\cite{springer_thesis}.
+%
+Following my PhD I accepted a position as a 
+Postdoctoral Research Associate at MIT\cite{mit}. 
+%
+Aside from my research investigating 
+how mutations in enzyme sequences affect catalysis,
+my post doc involved mentoring
+the junior members of the research group along
+with the integration and loading of 
+large public biological databases 
+into the workflow of the group from sources 
+such as the National Center for Biotechnology 
+Information for Next Generation Sequence data and 
+Protein Data Bank.
+%
+On the teaching side I developed material for 
+delivering graduate computational chemistry 
+lectures.
+%
+
+%
+Frustrated by the slow pace of academia
+and lack of wider impact outside my 
+small research community, combined with the desire to
+work in a more product-led environment, I decided to apply 
+for the The Faculty fellowship programme.
+%
+% This initiative helps academics become 
+% highly-skilled data scientists and 
+% transition successfully into careers 
+% and industries that are ready to benefit 
+% from artificial intelligence. 
+%
+% After two weeks of intensive lectures and 
+% workshops at Faculty, where I learned how to apply 
+% my technical knowledge towards the application of 
+% data science, I was paired with a company 
+% for a six-week data science project who subsequently 
+% hired me. 
+%
+The fellowship included two weeks of 
+intensive lectures and workshops at Faculty, 
+where I learned how to apply 
+my technical knowledge towards the application of 
+data science.
+% 
+I was then paired with a company 
+for a six-week data science project and they subsequently 
+hired me.
+%
+Working within this company and 
+later another technology startup in London
+I was building consumer-facing Machine-Learning
+products. 
+%
+I also spoke at Big Data Week London, co-hosting 
+a panel on How to Become an Effective Data Scientist\cite{BDW}.
+
+%
+An opportunity then arose to join the team at 
+Genomics England in their efforts to sequence
+and analyse 100,000 genomes from NHS patients.
+%
+This was a chance for me to further develop my
+bioinformatics and molecular genetics skills developed
+during my PhD and postdoc.
+%
+My work in the Bioinformatics team 
+on the 100,000 Genomes Project was 
+acknowledged in a British Medical Journal publication\cite{gel_bmj}.
+%
+Following the completion of the 100K project
+I joined IQVIA who has a unique data partnership
+with Genomics England and where I am the ML 
+lead for the in silico clinical trials project.
+%
+I also collaborate with IQVIA's ML researchers
+led by Danica Xiao, a renowned researcher in
+the AI for Healthcare field.
+%
+Most recently the work I've been doing 
+within a clinical and healthcare setting has 
+been accepted for the next AAAI conference\cite{conan} 
+(this year with an acceptance rate 
+of 20.6\%).
+%
+
+%
+I feel the state of Machine Learning and AI at the 
+moment is akin to the release of the IBM PC or the Apple II.
+%
+An example is the emergence of the first real spreadsheet 
+software, enabling people to deal with 
+financial data, customer data and so forth in a much 
+more intuitive way than would have been possible on a mainframe. 
+%
+Being able to use statistical-learning techniques, 
+machine-learning approaches or to train 
+computational neural nets 
+makes a lot of decades-old problems much 
+more tractable
+%
+A part of the Science Researcher role 
+I would relish is the unique opportunity 
+to participate in the Domain Expert Embedding Programme
+and have the chance to learn from world-leading researchers from 
+DeepMind and beyond.
+%
+I firmly believe DeepMind 
+is one of very 
+few companies that has some really globally and 
+intellectually significant problems in its sights 
+and that's why I really want to be a part of 
+your journey and apply my scientific skills to furthering
+DeepMind's vision.
+% 
+
+~\\
+I look forward to hearing from you. 
+
+~\\
+
+\makeletterclosing
+
+% \nocite{*}
+% \printbibliography
+%\bibliographystyle{plain}
+\bibliographystyle{unsrt}
+%\bibliographystyle{unsrtnat}
+\renewcommand{\refname}{References}
+% \renewcommand{\refname}{Links}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
+%%%%%%%%\cventry{year--year}{Job title}{Stylect}{Hoxton}{}{General description no longer than 1--2 lines.\newline{}%
+%%%%%%%%\begin{itemize}%
+%%%%%%%%\item My experience includes work with an e-commerce startup where I built a Recommendation Engine to improve their user experience and ultimately increase sales. This involved extensive Python development with Pandas (including NumPy, SciPy and Matplotlib) along with services from the Google Cloud Platform including Big Query and the App Engine. In addition, I utilised Natural Language Processing to perform Feature Engineering for a Machine Learning algorithm for Classifying retail products. 
+%%%%%%%%\item Achievement 2, with sub-achievements:
+%%%%%%%%  \begin{itemize}%
+%%%%%%%%  \item Sub-achievement (a);
+%%%%%%%%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%%%%%%%%    \begin{itemize}
+%%%%%%%%    \item Sub-sub-achievement i;
+%%%%%%%%    \item Sub-sub-achievement ii;
+%%%%%%%%    \item Sub-sub-achievement iii;
+%%%%%%%%    \end{itemize}
+%%%%%%%%  \item Sub-achievement (c);
+%%%%%%%%  \end{itemize}
+%%%%%%%%\item Achievement 3.
+%%%%%%%%\end{itemize}}
